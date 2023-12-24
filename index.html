@@ -12,6 +12,10 @@
         <img :class="gender" :src="picture" :alt="`${firstName} ${lastName}`">
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>Email: {{email}}</h3>
+        <div>
+            <h3><b>City:</b> {{city}} || <b>Country:</b> {{country}}</h3>
+            <img class="flag" :src="flag" :alt="`${country}`-flag">
+        </div>
         <button v-on:click="getUser()" :class="gender">Get Random User</button>
     </div>
 
